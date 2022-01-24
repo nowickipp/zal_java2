@@ -6,18 +6,16 @@ public class Animal {
         this.species = species;
         switch (species) {
             case "dog":
-                this.weight = 20.0;
-            case "cat":
-                this.weight = 2.5;
+                this.weight = 10.0;
         }
     }
 
-    boolean isAlive() {
+    private boolean isAlive() {
         return this.weight >= 0;
     }
 
     boolean isObese() {
-        return  this.weight < 25;
+        return  this.weight >= 15;
     }
 
     public void feed() {
@@ -25,7 +23,9 @@ public class Animal {
             this.weight++;
             System.out.println("Yum Yum Yum, Your animal weight is: " + this.weight + " kg");
         }
-
+        if (isObese()) {
+            System.out.println("DAMN BOi HE THICC, THATS THICC ASS BOI");
+        }
     }
 
     public void takeForAWalk() {
