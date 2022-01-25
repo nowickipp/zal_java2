@@ -15,7 +15,7 @@ public class Animal {
     }
 
     boolean isObese() {
-        return  this.weight >= 15;
+        return this.weight >= 15;
     }
 
     public void feed() {
@@ -32,8 +32,15 @@ public class Animal {
         if (isAlive()) {
             this.weight--;
             System.out.println("I'm a ha-ppy ha-ppy dog, yes I'm a happy happy happy dog. Your animal weight is: " + this.weight + " kg");
-        }
-        else System.out.println("Dude, your pet will unfortunately not go anywhere anymore!");
+        } else System.out.println("Dude, your pet will unfortunately not go anywhere anymore!");
+    }
+
+    @Override
+    public String toString() {
+        return "Animal:" + "\n" +
+                "Animal type: "  + species +
+                "\n" + "Animal weight: " + weight + "kg"
+                ;
     }
 }
 

@@ -1,3 +1,5 @@
+import devices.Car;
+
 import java.util.Date;
 
 public class Human {
@@ -49,6 +51,20 @@ public class Human {
             System.out.println("Change job, take a loan, as someone once said");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "First Name='" + firstName + '\'' +
+                ", Last Name='" + lastName + '\'' +
+                ", Pet=" + pet +
+                ", Car=" + machine +
+                ", Salary=" + salary +
+                ", Last Salary date=" + lastSalaryDate +
+                ", Last salary value=" + lastSalaryCheck +
+                '}';
+    }
+
 }
 
 
