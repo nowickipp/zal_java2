@@ -8,6 +8,8 @@ public class Main {
         me.lastName = "Doe";
         me.pet = new Animal("dog");
 
+        System.out.println(" \n \" DOGGO \" \n ");
+
         me.pet.feed();
         me.pet.feed();
         me.pet.takeForAWalk();
@@ -39,11 +41,11 @@ public class Main {
         me.pet.takeForAWalk();
         me.pet.takeForAWalk();
 
-        me.machine = new Car("volvo", "s90", 200, 2010, 35000.00);
 
+        System.out.println(" \n \" CAR \" \n ");
 
-
-
+        Car volvo = new Car("volvo", "s90", 200, 2010, 3500.0);
+        me.setMachine(volvo);
 
 
     }
