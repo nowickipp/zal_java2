@@ -1,14 +1,16 @@
 public class Car {
     final String producer;
     final String model;
-    String horsePower;
-    String year;
+    Integer horsePower;
+    Integer year;
+    public Double price;
 
 
-    public Car(String producer, String model, String horsepower, String year) {
+    public Car(String producer, String model, Integer horsepower, Integer year, Double price) {
         this.producer = producer;
         this.model = model;
         this.horsePower = horsepower;
         this.year = year;
+        this.price = price;
     }
 }
