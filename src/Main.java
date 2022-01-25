@@ -39,6 +39,10 @@ public class Main {
         me.pet.takeForAWalk();
         me.pet.takeForAWalk();
 
+        me.machine = new Car("volvo", "s90", "200", "2010");
+
+
+
 
     }
 }
