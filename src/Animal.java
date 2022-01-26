@@ -1,4 +1,4 @@
-public class Animal {
+public class Animal implements Sellable {
     final String species;
     private Double weight;
 
@@ -35,6 +35,7 @@ public class Animal {
         } else System.out.println("Dude, your pet will unfortunately not go anywhere anymore!");
     }
 
+
     @Override
     public String toString() {
         return "Animal:" + "\n" +
@@ -42,6 +43,24 @@ public class Animal {
                 "Animal weight: " + weight + "kg"
                 ;
     }
+
+    public void Sell(Human seller, Human buyer, Double price) {
+        if (seller.pet !=null & buyer.getCash() >= price) {
+            buyer.setCash(buyer.getCash() - price);
+            seller.setCash(seller.getCash() + price);
+            buyer.pet = seller.pet;
+            seller.pet = null;
+            System.out.println("Pet has been sold :<");
+        } else {
+            System.out.println("Potential new owner doesn`t have enough money ");
+        }
+    }
+
 }
+
+
+
+
+
 
 

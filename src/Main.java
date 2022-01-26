@@ -12,6 +12,9 @@ public class Main {
         Car volvo = new Car("volvo", "s90", 200, 2010, 3500.0);
         Car volvo2 = new Car("volvo", "s90", 200, 2010, 35000.0);
         Phone iPhone = new Phone("Iphone", "13", 2021);
+        Human newSeller = new Human();
+        me.cash = 10000.0;
+        newSeller.cash = 2000.0;
 
 
         System.out.println(" \n \" DOGGO \" \n ");
@@ -63,6 +66,14 @@ public class Main {
 
         System.out.println(" \n \" PHONE TURN ON \" \n ");
         iPhone.TurnOn();
+
+        System.out.println(" \n \" ANIMAL SELLING \" \n ");
+        me.pet.Sell(me, newSeller, 500.0);
+
+
+
+
+
 
 
     }

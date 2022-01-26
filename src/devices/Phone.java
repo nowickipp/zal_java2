@@ -10,9 +10,15 @@ public class Phone extends Device {
         System.out.println("Hello user, i'm your mobile phone personal assistant!");
     }
 
+
     @Override
     void turnOn() {
 
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 
 }

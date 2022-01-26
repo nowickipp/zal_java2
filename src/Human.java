@@ -3,20 +3,30 @@ import devices.Car;
 import java.util.Date;
 
 public class Human {
-    String firstName;
-    String lastName;
-    Animal pet;
-    private Car machine;
-    private Double salary;
-    private Double lastSalaryCheck;
-    private Date lastSalaryDate;
+   public String firstName;
+    public String lastName;
+    public Animal pet;
+    public Car machine;
+    public Double salary;
+    public Double lastSalaryCheck;
+    public Date lastSalaryDate;
+    public Double cash;
 
 
-    public Human() {
+       public Human() {
         this.salary = 10000.0;
         this.lastSalaryDate = new Date();
         this.lastSalaryCheck = this.salary;
     }
+
+    public Double getCash() {
+        return cash;
+    }
+
+    public void setCash(Double cash) {
+        this.cash = cash;
+    }
+
 
     public Double getSalary() {
         System.out.println("You recently checked your payout: " + this.lastSalaryDate + " it was: " + lastSalaryCheck + " PLN");
@@ -36,6 +46,14 @@ public class Human {
         }
     }
 
+    public Car pickMachine() {
+        return machine;
+    }
+
+    public void unsetVehicle() {
+        this.machine = null;
+    }
+
     public Car getMachine() {
         return machine;
     }
@@ -51,6 +69,7 @@ public class Human {
             System.out.println("Change job, take a loan, as someone once said");
         }
     }
+
 
     @Override
     public String toString() {
