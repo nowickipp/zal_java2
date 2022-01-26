@@ -55,14 +55,15 @@ public class Human {
     @Override
     public String toString() {
         return "Human{" +
-                "First Name='" + firstName + '\'' +
-                ", Last Name='" + lastName + '\'' +
-                ", Pet=" + pet +
-                ", Car=" + machine +
-                ", Salary=" + salary +
-                ", Last Salary date=" + lastSalaryDate +
+                "First Name='" + firstName + "\n" +
+                ", Last Name='" + lastName + "\n" +
+                ", Pet=" + pet + "\n" +
+                ", Car=" + machine + "\n" +
+                ", Salary=" + salary + "\n" +
+                ", Last Salary date=" + lastSalaryDate + "\n" +
                 ", Last salary value=" + lastSalaryCheck +
                 '}';
+
     }
 
 }

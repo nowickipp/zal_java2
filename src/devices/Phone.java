@@ -1,8 +1,19 @@
 package devices;
 
-public class Phone {
+public class Phone extends Device {
+    public Phone(String producer, String model, Integer year) {
+        super(producer, model, year);
+    }
 
 
+    public void TurnOn() {
+        System.out.println("Hello user, i'm your mobile phone personal assistant!");
+    }
 
+    @Override
+    void turnOn() {
+
+    }
 
 }
+

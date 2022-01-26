@@ -38,8 +38,8 @@ public class Animal {
     @Override
     public String toString() {
         return "Animal:" + "\n" +
-                "Animal type: "  + species +
-                "\n" + "Animal weight: " + weight + "kg"
+                "Animal type: " + species + "\n" +
+                "Animal weight: " + weight + "kg"
                 ;
     }
 }
